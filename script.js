@@ -1,60 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('JavaScript is running!');
-
+    states();
+    
 });
 
+var map = new Map();
 
-var button1click = false;
-var button2click = false; 
-var button3click = false;
-
-var activeButton = null;
-
-function setActiveButton(buttonId) {
-    activeButton = buttonId;
+function states(){
+    map.set('Button1', 'closed');
+    map.set('Button2', 'closed');
+    map.set('Button3', 'closed');
 }
-
+    
 function toggleButtonHeight(buttonId) {
+
+
     moveCircle(buttonId);
 
-    if(activeButton){
-        if(activeButton!=buttonId){
-            moveCircle(activeButton);
+    for (let [key, value] of map){
+        if(key!=buttonId){
+            if(value==='open'){
+                moveCircle(key);
+            }
         }
     }
-    activeButton = buttonId;
-    if (buttonId === 'Button1') {
-        button1click = !button1click;
-        button2click = false;
-        button3click = false;
-    } else if (buttonId === 'Button2') {
-        button2click = !button2click;
-        button1click = false;
-        button3click = false;
-    } else if (buttonId === 'Button3') {
-        button3click = !button3click;
-        button1click = false;
-        button2click = false;
-    }
-
-    if (button1click) {
-        document.getElementById('Button1').style.height = "174.11px";
-    } else {
-        document.getElementById('Button1').style.height = "74.11px";
-    }
-
-    if (button2click) {
-        document.getElementById('Button2').style.height = "174.11px";
-    } else {
-        document.getElementById('Button2').style.height = "74.11px";
-    }
-
-    if (button3click) {
-        document.getElementById('Button3').style.height = "174.11px";
-    } else {
-        document.getElementById('Button3').style.height = "74.11px";
-    }
     
+
 }
 
 function moveCircle(buttonId) {
@@ -62,4 +33,12 @@ function moveCircle(buttonId) {
 
     // Toggle the 'up' class to control the circle's position
     circle.classList.toggle('up');
+    console.log(map.get(buttonId));
+    if (map.get(buttonId)==='closed') {
+        map.set(buttonId,'open');
+        document.getElementById(buttonId).style.height = "174.11px";
+    } else {
+        map.set(buttonId, 'closed');
+        document.getElementById(buttonId).style.height = "74.11px";
+    }
 }

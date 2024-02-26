@@ -64,6 +64,57 @@ body {
     border-top: 0.903803px solid #C8C8C8;
 }
 
+#sunshineBliss .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    top: 82px;
+    left: 59px;
+
+}
+
+#sunshineBliss .section .firstRectangle {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 74.11px;
+    background: #FFFFFF;
+    border-color: black;
+    border: 0.9px solid #C8C8C8;
+}
+
+
+#sunshineBliss .section .secondRectangle {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 174.11px;
+    background: #FFFFFF;
+    border-color: black;
+    border: 0.9px solid #C8C8C8;
+}
+
+#sunshineBliss .section .thirdRectangle {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 74.11px;
+    background: #FFFFFF;
+    border-color: black;
+    border: 0.9px solid #C8C8C8;
+}
+
 #sunshineBliss .freeDelivery {
     position: absolute;
     width: 89px;

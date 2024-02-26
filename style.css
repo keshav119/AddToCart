@@ -108,24 +108,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 341px;
-    height: 174.11px;
+    height: 74.11px;
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
 }
 
 
-#sunshineBliss .section .secondRectangle .circle {
-    content: '';
-    width: 14.46px;
-    height: 14.46px;
-    border-radius: 50%;
-    border: 0.9px solid #FF6B82; 
-    background-color: white; /* Adjust the color as needed */
-    position: relative;
-    left: -141.27px;
-    top: 0px;
-}
 
 #sunshineBliss .section .thirdRectangle {
     margin-bottom: 75px;
@@ -140,17 +129,6 @@ body {
     border: 0.9px solid #C8C8C8;
 }
 
-#sunshineBliss .section .thirdRectangle .circle {
-    content: '';
-    width: 14.46px;
-    height: 14.46px;
-    border-radius: 50%;
-    border: 0.9px solid #FF6B82; 
-    background-color: white; /* Adjust the color as needed */
-    position: relative;
-    left: -141.27px;
-    top: 0px;
-}
 
 #sunshineBliss .freeDelivery {
     position: absolute;

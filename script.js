@@ -1,14 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('JavaScript is running!');
+
 });
 
+
 var button1click = false;
-var button2click = true; 
+var button2click = false; 
 var button3click = false;
 
-function toggleButtonHeight(buttonId) {
-    var button = document.getElementById(buttonId);
+var activeButton = null;
 
+function setActiveButton(buttonId) {
+    activeButton = buttonId;
+}
+
+function toggleButtonHeight(buttonId) {
+    moveCircle(buttonId);
+
+    if(activeButton){
+        if(activeButton!=buttonId){
+            moveCircle(activeButton);
+            
+        }
+    }
+    activeButton = buttonId;
     if (buttonId === 'Button1') {
         button1click = !button1click;
         button2click = false;
@@ -25,24 +40,22 @@ function toggleButtonHeight(buttonId) {
 
     if (button1click) {
         document.getElementById('Button1').style.height = "174.11px";
-        moveCircle('Button1');
     } else {
         document.getElementById('Button1').style.height = "74.11px";
     }
 
     if (button2click) {
         document.getElementById('Button2').style.height = "174.11px";
-        moveCircle('Button2');
     } else {
         document.getElementById('Button2').style.height = "74.11px";
     }
 
     if (button3click) {
         document.getElementById('Button3').style.height = "174.11px";
-        moveCircle('Button3');
     } else {
         document.getElementById('Button3').style.height = "74.11px";
     }
+    
 }
 
 function moveCircle(buttonId) {
@@ -51,5 +64,3 @@ function moveCircle(buttonId) {
     // Toggle the 'up' class to control the circle's position
     circle.classList.toggle('up');
 }
-
-

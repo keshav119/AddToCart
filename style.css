@@ -1,0 +1,150 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+/* Reset styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+/* Sunshine Bliss */
+#sunshineBliss {
+    border: 1px solid black;
+    position: absolute;
+    width: 462px;
+    height: 603px;
+    top: 150px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Group 60 */
+#sunshineBliss .group60 {
+    position: absolute;
+    width: 343px;
+    height: 24px;
+    left: 59px;
+    top: 39px;
+    display: flex; /* Added to make flex layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Line 19 */
+#sunshineBliss .group60 .line19 {
+    flex: 1; /* This will make the line take up all available space */
+    height: 0;
+    border-top: 0.903803px solid #C8C8C8;
+}
+
+/* YAY! It’s BOGO */
+#sunshineBliss .group60 .bogo {
+    font-family: 'Inter', sans-serif; /* Added 'Inter' font */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF6B82;
+    margin: 0 10px; /* Added margin for spacing */
+}
+
+/* Line 22 */
+#sunshineBliss .group60 .line22 {
+    flex: 1; /* This will make the line take up all available space */
+    height: 0;
+    border-top: 0.903803px solid #C8C8C8;
+}
+
+#sunshineBliss .freeDelivery {
+    position: absolute;
+    width: 89px;
+    height: 17px;
+    left: 58px;
+    top: 460px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #FF6B82;
+}
+
+#sunshineBliss .total {
+    position: absolute;
+    width: 124px;
+    height: 17px;
+    left: 274px;
+    top: 460px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #000000;
+}
+
+#sunshineBliss .frame628527 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 4px;
+    gap: 8px;
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    left: 58px;
+    top: 497px;
+    background: #FF6B82;
+    border-radius: 4px;
+}
+
+#sunshineBliss .frame628527 .plus{
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translate(0, -25%);
+    padding: 0px;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+
+#sunshineBliss .frame628527 .addToCart{
+    width: 68px;
+    height: 15px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.52px;
+}
+
+
+
+
+#sunshineBliss .poweredByPumper {
+    position: absolute;
+    width: 129px;
+    height: 15px;
+    left: 271px;
+    top: 542px;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}

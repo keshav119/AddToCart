@@ -40,11 +40,7 @@ body {
 }
 
 /* Line 19 */
-#sunshineBliss .group60 .line19 {
-    flex: 1; /* This will make the line take up all available space */
-    height: 0;
-    border-top: 0.903803px solid #C8C8C8;
-}
+
 
 /* YAY! It’s BOGO */
 #sunshineBliss .group60 .bogo {
@@ -57,10 +53,11 @@ body {
     margin: 0 10px; /* Added margin for spacing */
 }
 
-/* Line 22 */
+
+#sunshineBliss .group60 .line19,
 #sunshineBliss .group60 .line22 {
     flex: 1; /* This will make the line take up all available space */
-    height: 0;
+    height: 0.903803px;
     border-top: 0.903803px solid #C8C8C8;
 }
 
@@ -78,15 +75,30 @@ body {
 #sunshineBliss .section .firstRectangle {
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 341px;
     height: 74.11px;
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
 }
+#sunshineBliss .section .circle {
+    width: 14.46px;
+    height: 14.46px;
+    border-radius: 50%;
+    border: 0.9px solid #FF6B82; 
+    background-color: white; /* Adjust the color as needed */
+    position: relative;
+    left: -141.27px;
+    top: 0; /* Set the initial top value */
+    transition: top 0.3s ease; /* Add a transition for smooth movement */
+}
+
+#sunshineBliss .section .circle.up {
+    top: -50.055px;
+}
+
 
 
 #sunshineBliss .section .secondRectangle {
@@ -102,6 +114,19 @@ body {
     border: 0.9px solid #C8C8C8;
 }
 
+
+#sunshineBliss .section .secondRectangle .circle {
+    content: '';
+    width: 14.46px;
+    height: 14.46px;
+    border-radius: 50%;
+    border: 0.9px solid #FF6B82; 
+    background-color: white; /* Adjust the color as needed */
+    position: relative;
+    left: -141.27px;
+    top: 0px;
+}
+
 #sunshineBliss .section .thirdRectangle {
     margin-bottom: 75px;
     display: flex;
@@ -113,6 +138,18 @@ body {
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
+}
+
+#sunshineBliss .section .thirdRectangle .circle {
+    content: '';
+    width: 14.46px;
+    height: 14.46px;
+    border-radius: 50%;
+    border: 0.9px solid #FF6B82; 
+    background-color: white; /* Adjust the color as needed */
+    position: relative;
+    left: -141.27px;
+    top: 0px;
 }
 
 #sunshineBliss .freeDelivery {

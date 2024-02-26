@@ -24,20 +24,32 @@ function toggleButtonHeight(buttonId) {
     }
 
     if (button1click) {
-        document.getElementById('Button1').style.height = "150px";
+        document.getElementById('Button1').style.height = "174.11px";
+        moveCircle('Button1');
     } else {
         document.getElementById('Button1').style.height = "74.11px";
     }
 
     if (button2click) {
-        document.getElementById('Button2').style.height = "150px";
+        document.getElementById('Button2').style.height = "174.11px";
+        moveCircle('Button2');
     } else {
         document.getElementById('Button2').style.height = "74.11px";
     }
 
     if (button3click) {
-        document.getElementById('Button3').style.height = "150px";
+        document.getElementById('Button3').style.height = "174.11px";
+        moveCircle('Button3');
     } else {
         document.getElementById('Button3').style.height = "74.11px";
     }
 }
+
+function moveCircle(buttonId) {
+    var circle = document.getElementById(buttonId + 'Circle');
+
+    // Toggle the 'up' class to control the circle's position
+    circle.classList.toggle('up');
+}
+
+

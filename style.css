@@ -6,7 +6,7 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 400px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -21,7 +21,6 @@ body {
     position: absolute;
     width: 462px;
     height: 603px;
-    top: 150px;
     background: #FFFFFF;
     display: flex;
     align-items: center;
@@ -82,6 +81,7 @@ body {
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
+    transition: height 0.3s ease;
 }
 #sunshineBliss .section .circle {
     width: 14.46px;
@@ -93,6 +93,9 @@ body {
     left: -141.27px;
     top: 0; /* Set the initial top value */
     transition: top 0.3s ease; /* Add a transition for smooth movement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sunshineBliss .section .circle.up {
@@ -100,6 +103,19 @@ body {
 }
 
 
+#sunshineBliss .section .circle .dot {
+    width: 9.04px;
+    height: 9.04px;
+    border-radius: 50%;
+    background-color: #FF6B82; 
+    position: relative;
+    transition: top 0.2s ease;
+    visibility: hidden;
+}
+
+#sunshineBliss .section .circle .dot.visible {
+    visibility: visible;
+}
 
 #sunshineBliss .section .secondRectangle {
     margin-bottom: 20px;
@@ -112,6 +128,7 @@ body {
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
+    transition: height 0.3s ease;
 }
 
 
@@ -127,6 +144,7 @@ body {
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
+    transition: height 0.3s ease;   
 }
 
 

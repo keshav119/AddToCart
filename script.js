@@ -20,7 +20,6 @@ function toggleButtonHeight(buttonId) {
     if(activeButton){
         if(activeButton!=buttonId){
             moveCircle(activeButton);
-            
         }
     }
     activeButton = buttonId;

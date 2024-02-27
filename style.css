@@ -8,9 +8,8 @@ body {
     margin: 0;
     padding: 400px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     background-color: black;
 }
 
@@ -22,9 +21,6 @@ body {
     width: 462px;
     height: 603px;
     background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Group 60 */
@@ -61,45 +57,79 @@ body {
 }
 
 #sunshineBliss .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     padding: 0px;
     top: 82px;
     left: 59px;
 
 }
 
-#sunshineBliss .section .firstRectangle {
+#sunshineBliss .section .rectangle1 {
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0px;
     width: 341px;
     height: 74.11px;
     background: #FFFFFF;
     border-color: black;
     border: 0.9px solid #C8C8C8;
-    transition: height 0.3s ease;
+    transition: height 0.1s ease;
 }
+
+
+#sunshineBliss .section .rectangle1.toggle {
+    height: 174.11px;
+    background: #FFF9FA;
+}
+
+
+
+#sunshineBliss .section .rectangle2 {
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 341px;
+    height: 74.11px;
+    background: #FFFFFF;
+    border-color: black;
+    border: 0.9px solid #C8C8C8;
+    transition: height 0.1s ease;
+}
+
+
+#sunshineBliss .section .rectangle2.toggle {
+    height: 174.11px;
+    background: #FFF9FA;
+}
+
+
+#sunshineBliss .section .rectangle3 {
+    margin-bottom: 75px;
+    width: 341px;
+    height: 74.11px;
+    background: #FFFFFF;
+    border-color: black;
+    border: 0.9px solid #C8C8C8;
+    transition: height 0.1s ease;   
+}
+
+
+#sunshineBliss .section .rectangle3.toggle {
+    height: 174.11px;
+    background: #FFF9FA;
+}
+
+
 #sunshineBliss .section .circle {
     width: 14.46px;
     height: 14.46px;
     border-radius: 50%;
     border: 0.9px solid #FF6B82; 
-    background-color: white; /* Adjust the color as needed */
+    background-color: white;
     position: relative;
-    left: -141.27px;
-    top: 0; /* Set the initial top value */
-    transition: top 0.3s ease; /* Add a transition for smooth movement */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#sunshineBliss .section .circle.up {
-    top: -50.055px;
+    transition: top 0.3s ease; 
+    display: grid;
+    place-items: center;
+    left: 22px;
+    top: 27.85px;
 }
 
 
@@ -107,8 +137,8 @@ body {
     width: 9.04px;
     height: 9.04px;
     border-radius: 50%;
-    background-color: #FF6B82; 
-    position: relative;
+    background-color: #FF6B82;
+    position: absolute;
     transition: top 0.2s ease;
     visibility: hidden;
 }
@@ -117,36 +147,209 @@ body {
     visibility: visible;
 }
 
-#sunshineBliss .section .secondRectangle {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 341px;
-    height: 74.11px;
-    background: #FFFFFF;
-    border-color: black;
-    border: 0.9px solid #C8C8C8;
-    transition: height 0.3s ease;
+#sunshineBliss .section .standardPrice {
+    width: 84px;
+    height: 15px;
+    left: 50.23px;
+    top: -60px;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 
-
-#sunshineBliss .section .thirdRectangle {
-    margin-bottom: 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 341px;
-    height: 74.11px;
-    background: #FFFFFF;
-    border-color: black;
-    border: 0.9px solid #C8C8C8;
-    transition: height 0.3s ease;   
+#sunshineBliss .section .standardPrice.toggle {
+    top: -36px;
 }
 
+
+#sunshineBliss .section .unit1 {
+    width: 42px;
+    height: 18px;
+    left: 49.23px;
+    top: 5.42px;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+#sunshineBliss .section .unit2 {
+    width: 42px;
+    height: 18px;
+    left: 49.23px;
+    top: 11px;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+#sunshineBliss .section .unit3 {
+    width: 42px;
+    height: 18px;
+    left: 49.23px;
+    top: 11px;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+#sunshineBliss .section .discount {
+    width: 55px;
+    height: 17px;
+    left: 48.77px;
+    top: -17px;
+    background-color: #FF6B82;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 1px;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+}
+
+#sunshineBliss .section .priceTag {
+    width: 85px;
+    height: 18px;
+    left: 234px;
+    top: -12.5px;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.46px;
+    line-height: 17.5px;
+}
+
+#sunshineBliss .section .spriceTag {
+    width: 58px;
+    height: 12px;
+    left: 234px;
+    top: -12.5px;
+    opacity: 30%;
+    color: black;
+    position: relative;
+    transition: top 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12.1px;
+}
+
+#sunshineBliss .section .sizeTitle {
+    width: 20px;
+    height: 12px;
+    left: 66.23px;
+    top: 7.61px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.94px;
+    line-height: 12.03px;
+    visibility: hidden;
+    position: relative;
+}
+
+#sunshineBliss .section .sizeTitle.toggle {
+    visibility: visible;
+}
+
+#sunshineBliss .section .colorTitle {
+    width: 20px;
+    height: 12px;
+    left: 139.44px;
+    top: -4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.94px;
+    line-height: 12.03px;
+    visibility: hidden;
+    position: relative;
+}
+
+#sunshineBliss .section .colorTitle.toggle {
+    visibility: visible;
+}
+
+#sunshineBliss .section .number1 {
+    height: 11px;
+    width: 10px;
+    left: 49.06px;
+    top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 9.04px;
+    line-height: 10.94px;
+    position: relative;
+    visibility: hidden;
+}
+
+#sunshineBliss .section .number1.toggle {
+    visibility: visible;
+}
+
+#sunshineBliss .section .number2 {
+    height: 11px;
+    width: 10px;
+    left: 49.06px;
+    top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 9.04px;
+    line-height: 10.94px;
+    position: relative;
+    visibility: hidden;
+}
+
+#sunshineBliss .section .number2.toggle {
+    visibility: visible;
+}
+
+#sunshineBliss .section .number3 {
+    height: 11px;
+    width: 10px;
+    left: 49.06px;
+    top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 9.04px;
+    line-height: 10.94px;
+    position: relative;
+    visibility: hidden;
+}
+
+#sunshineBliss .section .number3.toggle {
+    visibility: visible;
+}
 
 #sunshineBliss .freeDelivery {
     position: absolute;

@@ -29,25 +29,43 @@ function toggleButtonHeight(buttonId) {
 
 }
 function moveCircle(buttonId) {
-    var circle = document.getElementById(buttonId + 'Circle');
+    var rectangle = document.getElementById(buttonId);
     var dot = document.getElementById(buttonId + 'Dot');
+    var sizeTitle = document.getElementById(buttonId + 'SizeTitle');
+    var colorTitle = document.getElementById(buttonId + 'ColorTitle');
+    var number1 = document.getElementById(buttonId + 'Number1');
+    var number2 = document.getElementById(buttonId + 'Number2');
+    var number3 = document.getElementById(buttonId + 'Number3');
+   
+    // if(buttonId==='Button1'){
+    //     moveStandardPrice();
+    // }
+    // Toggle the 'up' class to control the circle's position
+    rectangle.classList.toggle('toggle');
+    dot.classList.toggle('visible');
+    sizeTitle.classList.toggle('toggle');
+    colorTitle.classList.toggle('toggle');
+    number1.classList.toggle('toggle');
     
 
-    // Toggle the 'up' class to control the circle's position
-    circle.classList.toggle('up');
-    dot.classList.toggle('visible');
-    
-    
+    if(number2){
+        number2.classList.toggle('toggle');
+    }
+    if(number3){
+        number3.classList.toggle('toggle');
+    }
+
 
     if (map.get(buttonId) === 'closed') {
-        
         map.set(buttonId, 'open');
-        document.getElementById(buttonId).style.height = '174.11px';
     } else {
-        
         map.set(buttonId, 'closed');
-        document.getElementById(buttonId).style.height = '74.11px';
     }
+}
+
+function moveStandardPrice(){
+    var sp = document.getElementById('standard');
+    sp.classList.toggle('toggle');
 }
 
 function setPrice(buttonId){

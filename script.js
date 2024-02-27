@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     states();
 
 });
-
+// hashmap for simple button state management
 var map = new Map();
 
 function states(){
@@ -17,6 +17,7 @@ function toggleButtonHeight(buttonId) {
     setPrice(buttonId);
     moveCircle(buttonId);
     
+    
 
     for (let [key, value] of map){
         if(key!=buttonId){
@@ -29,6 +30,7 @@ function toggleButtonHeight(buttonId) {
 
 }
 function moveCircle(buttonId) {
+    lists(buttonId);
     var rectangle = document.getElementById(buttonId);
     var dot = document.getElementById(buttonId + 'Dot');
     var sizeTitle = document.getElementById(buttonId + 'SizeTitle');
@@ -36,16 +38,13 @@ function moveCircle(buttonId) {
     var number1 = document.getElementById(buttonId + 'Number1');
     var number2 = document.getElementById(buttonId + 'Number2');
     var number3 = document.getElementById(buttonId + 'Number3');
-   
-    // if(buttonId==='Button1'){
-    //     moveStandardPrice();
-    // }
-    // Toggle the 'up' class to control the circle's position
+    
     rectangle.classList.toggle('toggle');
     dot.classList.toggle('visible');
     sizeTitle.classList.toggle('toggle');
     colorTitle.classList.toggle('toggle');
     number1.classList.toggle('toggle');
+    
     
 
     if(number2){
@@ -76,7 +75,6 @@ function setPrice(buttonId){
                 priceTag.textContent = 'Total : $10.00 USD';
                 break;
             case 'Button2':
-                // Add logic for Button2 if needed
                 priceTag.textContent = 'Total : $18.00 USD';
                 break;
             case 'Button3':
@@ -89,5 +87,25 @@ function setPrice(buttonId){
     } else {
         priceTag.textContent = 'Total : $0.00 USD';
         
+    }
+}
+
+function lists(buttonId){
+    var b1 = document.getElementById('b1');
+    var b2 = document.getElementById('b2');
+    var b3 = document.getElementById('b3');
+
+    switch(buttonId){
+        case 'Button1':
+            b1.classList.toggle('toggle');
+            break;
+        case 'Button2':
+            b2.classList.toggle('toggle');
+            break;
+        case 'Button3':
+            b3.classList.toggle('toggle');
+            break;
+        default:
+            return;
     }
 }

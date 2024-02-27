@@ -1,8 +1,7 @@
-/* Importing fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 
-/* Reset styles */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -13,8 +12,6 @@ body {
     background-color: black;
 }
 
-
-/* Sunshine Bliss */
 #sunshineBliss {
     border: 1px solid black;
     position: absolute;
@@ -23,7 +20,6 @@ body {
     background: #FFFFFF;
 }
 
-/* Group 60 */
 #sunshineBliss .group60 {
     position: absolute;
     width: 343px;
@@ -34,10 +30,8 @@ body {
     align-items: center; /* Center items vertically */
 }
 
-/* Line 19 */
 
 
-/* YAY! It’s BOGO */
 #sunshineBliss .group60 .bogo {
     font-family: 'Inter', sans-serif; /* Added 'Inter' font */
     font-style: normal;
@@ -240,7 +234,7 @@ body {
     top: -12.5px;
     color: black;
     position: relative;
-    transition: top 0.3s ease;
+    transition: top 0.1s ease;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -256,7 +250,7 @@ body {
     opacity: 30%;
     color: black;
     position: relative;
-    transition: top 0.3s ease;
+    transition: top 0.1s ease;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -434,4 +428,175 @@ body {
     font-size: 12px;
     line-height: 15px;
     color: rgba(0, 0, 0, 0.4);
+}
+
+#sunshineBliss .b1 {
+    width: 140px;
+    height: 25.31px;
+    position: relative;
+    left: 125.23px;
+    top: 170px;
+    z-index: -10;
+    transition: 0.1s ease;
+}
+
+#sunshineBliss .b1.toggle {
+    z-index: 1;
+}
+
+#sunshineBliss .b1SizeSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b1ColorSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 3px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+
+#sunshineBliss .b2 {
+    width: 140px;
+    height: 55px;
+    position: relative;
+    left: 125.23px;
+    top: 240px;
+    z-index: -10;
+    transition: 0.1s ease;
+
+}
+
+#sunshineBliss .b2.toggle {
+    z-index: 1;
+}
+
+#sunshineBliss .b2SizeSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b2SizeSelect2 {
+    width: 65.98px;
+    height: 25.31px;
+    top: 29px;
+    left: -70.98px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b2ColorSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 73.98px;
+    top: -25.5px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b2ColorSelect2 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 4px;
+    top: 4px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+
+#sunshineBliss .b3 {
+    width: 140px;
+    height: 80px;
+    position: relative;
+    left: 125.23px;
+    top: 280px;
+    z-index: -10;
+    transition: 0.1s ease;
+
+}
+
+#sunshineBliss .b3.toggle {
+    z-index: 1;
+}
+
+#sunshineBliss .b3SizeSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b3SizeSelect2 {
+    width: 65.98px;
+    height: 25.31px;
+    top: 30px;
+    left: -70.98px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b3SizeSelect3 {
+    width: 65.98px;
+    height: 25.31px;
+    top: 35px;
+    left: 0px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b3ColorSelect1 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 3px;
+    top: -25px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b3ColorSelect2 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 73.5px;
+    top: -20px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
+}
+
+#sunshineBliss .b3ColorSelect3 {
+    width: 65.98px;
+    height: 25.31px;
+    left: 3px;
+    top: 10px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.85px;
+    line-height: 13.13px;
 }
